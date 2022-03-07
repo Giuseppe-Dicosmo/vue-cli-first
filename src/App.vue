@@ -1,19 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <CiaoMondo />
+    <JumboHero />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CiaoMondo from "./components/CiaoMondo.vue";
+import JumboHero from "./components/JumboHero.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    CiaoMondo,
+    JumboHero,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -24,5 +27,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  position: relative;
 }
 </style>
